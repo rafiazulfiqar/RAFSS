@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PercentageCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input obtained marks
+        System.out.print("Enter obtained marks: ");
+        double obtainedMarks = sc.nextDouble();
+
+        // Input maximum marks
+        System.out.print("Enter maximum marks: ");
+        double maximumMarks = sc.nextDouble();
+
+        // Calculate percentage
+        double percentage = (obtainedMarks / maximumMarks) * 100;
+
+        // Print result
+        System.out.println("Percentage Marks: " + percentage + "%");
+
+        sc.close();
+    }
+}
